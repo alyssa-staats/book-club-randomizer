@@ -2,7 +2,7 @@ library(readxl)
 library(devtools)
 
 setwd("~/Google Drive/Book Club")
-# Read in the sheet of the book club file that corresponds to the month with the eligible people & their book choices. 4 is thus totally arbitrary.
+# Read in the sheet of the book club file that corresponds to the month with the eligible people & their book choices. 4 is thus totally arbitrary and merely corresponds to the month under consideration.
 book_club <- read_excel("Book Club.xlsx", 4)
 
 # create a vector of the list of people who have made book suggestions. if anyone has made any typos in their name, it will screw up here because it will count each misspelling separately.
